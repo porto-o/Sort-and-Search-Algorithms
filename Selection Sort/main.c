@@ -4,8 +4,8 @@ int ordSeleccion(int numeros[],int n);
 
 int main()
 {
-    int n=0;
-    int numeros[n], elemento;
+    int n,elemento;
+    int numeros[n];
 
     printf("\nNumero de elementos a insertar: ");
     scanf("%i",&n);
@@ -18,7 +18,7 @@ int main()
 
     printf("\nArray desordenado: ");
     for (int i = 0; i < n; ++i) {
-        printf("%i,",numeros[i]);
+        printf("%d,",numeros[i]);
     }
 
     ordSeleccion(numeros,n);
@@ -31,16 +31,16 @@ int ordSeleccion(int numeros[], int n)
     // Buscar el menor e intercambiar por el A[0]...A[N-1]
     int indiceMenor;
     for (int i = 0; i < n-1; ++i) {
-        indiceMenor = i;
-        for (int j = i+1; j < n; ++j) {
-            if(numeros[j] < numeros[indiceMenor])
+        indiceMenor = i;    // Tomamos el primero elemento por default como el menor
+        for (int j = i+1; j < n; ++j) { // Recorremos a partir de la siguiente posicion la lista desordenada
+            if(numeros[j] < numeros[indiceMenor])   // El elemento en la lista desordenada es menor al de la lista ordenada?
             {
-                indiceMenor = j;
+                indiceMenor = j;    // Se intercambia el índice del menor
                 if(i != indiceMenor)
                 {
-                    double aux = numeros[i];
+                    int aux = numeros[i];
                     numeros[i] = numeros[indiceMenor];
-                    numeros[indiceMenor] = (int)aux;
+                    numeros[indiceMenor] = aux;
                 }
             }
         }
