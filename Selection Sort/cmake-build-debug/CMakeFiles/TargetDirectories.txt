@@ -1,3 +1,0 @@
-C:/Users/ismae/CLionProjects/Algoritmos/Seleccion/cmake-build-debug/CMakeFiles/Seleccion.dir
-C:/Users/ismae/CLionProjects/Algoritmos/Seleccion/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/ismae/CLionProjects/Algoritmos/Seleccion/cmake-build-debug/CMakeFiles/rebuild_cache.dir
