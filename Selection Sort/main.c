@@ -22,6 +22,8 @@ int main()
     }
 
     ordSeleccion(numeros,n);
+    ordBurbuja(numeros, n);
+
 
     return 0;
 }
@@ -47,7 +49,7 @@ int ordSeleccion(int numeros[], int n)
     }
 
 
-    printf("\nArray ordenado: ");
+    printf("\nArray ordenado por seleccion: ");
     for (int i = 0; i < n; ++i) {
         printf("%i,",numeros[i]);
     }
