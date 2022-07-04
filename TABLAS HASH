@@ -24,3 +24,54 @@ Si el indic está ocupado, se hace una busqueda secuencial hasta ubicar una casi
 
 Para reducir el número de colisiones se pueden aumentar el tamaño de la tabla y volver a calcular indice = llave mod n
 
+Otra forma de arreglar las colisiones es mediante el encadenamiento mediante listas
+
+Por lo tanto la tabla se convierte en un arreglo de listas, cuando se encuentra una colision se inserta el elemento como un nuevo de la lista
+
+
+
+TDA HASH
+
+consTH:int tamaño -> tabla Hash
+insertaTH: Elem e, TablaH t, int tamaño -> Tabla Hash
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Programiz https://www.programiz.com/dsa
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
