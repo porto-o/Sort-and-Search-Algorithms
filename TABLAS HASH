@@ -1,0 +1,26 @@
+Tablas Hash
+
+Tabla para meter elementos que no están ordenados que se asignaran en la posición que devuelva el valor hash
+
+Se define una llave -> representación numérica asociada al registro que se busca dentro de la tabla
+                    -> Alumno, llave podría ser la boleta
+                    
+                    
+                    Indice = Llave*mod(n)
+                    
+                    n := tamaño de la tabla
+
+
+                    si n es primo, la dispersión es mejor
+
+                    
+Calcular el módulo en 1 sola dirección es fácil, sin embargo, querer calcular la llave es casi imposible ya que existen infinidad de numeros tales que el
+                                                                  ? * módulo(n) = indice
+
+Por lo tanto pueden ocurrir colisiones, es cuando 2 elementos tienen el mismo valor hash o índice
+
+Si el indic está ocupado, se hace una busqueda secuencial hasta ubicar una casilla vacia a la derecha
+
+
+Para reducir el número de colisiones se pueden aumentar el tamaño de la tabla y volver a calcular indice = llave mod n
+
